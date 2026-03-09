@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button-id">Click Me</button>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vitae maiores nam ea. Adipisci fuga asperiores voluptatem ullam dolorem, ex temporibus sint architecto aliquam alias neque natus vel optio doloribus.</p>
+</body>
+<script>
+    const button = document.getElementById("button-id");
+    button.addEventListener("click", function() {
+        button.textContent = "Clicked!";
+        button.disable=true
+        const para = document.getElementById("para");
+        para.style.color = "blue";
+    });
+</script>
+</html>
